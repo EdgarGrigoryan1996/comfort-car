@@ -1,0 +1,79 @@
+.advertisingBlock{
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+  margin-top: 40px;
+  .infoBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px 0;
+    align-items: flex-start;
+    height: 100%;
+    position: absolute;
+    left: 0;
+
+    h2{
+      font-size: 14px;
+      font-weight: 900;
+      span{
+        color: var(--main-color);
+      }
+    }
+    
+  }
+  .imageBlock{
+    max-width: 70%;
+  }
+  img{
+  max-width: 100%;
+  }
+}
+@media screen and (min-width: 456px){
+  .advertisingBlock{
+    .infoBlock{
+      h2{
+        font-size: 18px;
+      }
+      button{
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px){
+  .advertisingBlock{
+    .infoBlock{
+      h2{
+        font-size: 22px;
+      }
+      button{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 756px){
+  .advertisingBlock{
+    margin-top: 80px;
+    .infoBlock{
+      justify-content: center;
+      gap: 90px 0;
+      h2{
+        font-size: 30px;
+        font-weight: 900;
+      }
+      button{
+        font-size: 18px;
+        padding: 10px 40px;
+        font-weight: 800;
+      }
+    }
+    .imageBlock{
+      max-width: 70%;
+    }
+  }
+}

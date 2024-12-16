@@ -1,0 +1,12 @@
+{
+  "menu": {
+    "armrest": "Armrest",
+    "trunkBags": "Trunk Bags",
+    "gasCylinderCase": "Gas Cylinder Case",
+    "tireCase": "Tire Case",
+    "firstAirBag": "First Aid Bag"
+  },
+  "product": {
+    "call": "Call Now"
+  }
+}

@@ -1,0 +1,20 @@
+/* Filter Block*/
+.productsWithFilterWrapper{
+    display: flex;
+}
+.filterBlock{
+    min-width: 22%;
+}
+.productsWithFilterBlock{
+    min-width: 75%;
+    .productCardBlock{
+        flex-basis: 33%;
+    }
+}
+
+@media screen and (min-width: 756px){
+    .filterIconBlock{
+        display: none;
+    }
+}
+
