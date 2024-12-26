@@ -1,17 +1,20 @@
-.callButtonBlock button{
-  border: none;
-  font-size: 10px;
-  cursor: pointer;
-  font-weight: 600;
+.callButtonBlock{
   width: 100%;
-  display: flex;
-  a{
-    color: #fff;
-    display: block;
-    background: var(--main-color);
-    padding: 12px;
-    text-decoration: none;
+  button{
+    border: none;
+    font-size: 10px;
+    font-weight: 600;
     width: 100%;
-    flex: 1;
+    display: flex;
+    background: none;
+    a{
+      color: #fff;
+      display: block;
+      background: var(--main-color);
+      padding: 12px;
+      text-decoration: none;
+      width: 100%;
+      flex: 1;
+    }
   }
 }
