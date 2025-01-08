@@ -1,7 +1,7 @@
 .filterBlock{
     position: fixed;
     background-color: #f9f9f9;
-    width: 60%;
+    width: 100%;
     transform: translate(-100%);
     height: 100vh;
     overflow: scroll;
@@ -33,6 +33,16 @@
 .filterBlock ul li span{
     cursor: pointer;
     margin: 15px 0;
+}
+.filterBlock ul li.disable{
+    opacity: 0.9;
+    cursor: not-allowed !important;
+    span{
+        cursor: not-allowed !important;
+    }
+    label{
+        cursor: not-allowed !important;
+    }
 }
 .filterBlock ul li label{
     position: relative;

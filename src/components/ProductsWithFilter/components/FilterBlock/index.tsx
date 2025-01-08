@@ -1,4 +1,4 @@
-import React, { Dispatch, FC } from "react";
+import React, { Dispatch, FC, useEffect } from "react";
 import s from "./FilterBlock.module.scss";
 
 import { FilterDataType } from "../../../../types/FilterDataType";
@@ -9,6 +9,28 @@ import { BiCheckCircle } from "react-icons/bi";
 export const FilterBlock: FC<FilterBlockPropsType> = (
   props: FilterBlockPropsType,
 ) => {
+  const checkFilterData = (
+    currentData: FilterDataType[],
+    setCurrentData: Dispatch<FilterDataType[]>,
+  ) => {
+    const checkFilterData = currentData.filter((data) => {
+      return data.checked;
+    });
+    if (checkFilterData.length === 0) {
+      setCurrentData(
+        currentData.map((data) => {
+          if (data.id === 1) {
+            return {
+              ...data,
+              checked: true,
+            };
+          } else {
+            return data;
+          }
+        }),
+      );
+    }
+  };
   const changeChecked = (
     currentData: FilterDataType[],
     setCurrentData: Dispatch<FilterDataType[]>,
@@ -50,7 +72,9 @@ export const FilterBlock: FC<FilterBlockPropsType> = (
       );
     }
   };
-
+  useEffect(() => {
+    checkFilterData(props.currentFilterData, props.setCurrentFilterData);
+  }, [props.currentFilterData]);
   return (
     <>
       <div
@@ -74,15 +98,22 @@ export const FilterBlock: FC<FilterBlockPropsType> = (
         <ul>
           {props.currentFilterData.map((data: FilterDataType) => {
             return (
-              <li key={data.name}>
+              <li
+                key={data.name}
+                className={data.id === 1 && data.checked ? s.disable : ""}
+              >
                 <span
-                  onClick={() =>
-                    changeChecked(
-                      props.currentFilterData,
-                      props.setCurrentFilterData,
-                      data.id,
-                    )
-                  }
+                  onClick={() => {
+                    if (data.id === 1 && data.checked) {
+                      return false;
+                    } else {
+                      changeChecked(
+                        props.currentFilterData,
+                        props.setCurrentFilterData,
+                        data.id,
+                      );
+                    }
+                  }}
                 >
                   {data.name}
                 </span>

@@ -9,42 +9,79 @@ header{
       max-width: 100%;
     }
   }
+  .mobileLangButton{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    svg{
+      font-size: 24px;
+    }
+  }
 
 }
 .phoneLangBlock{
+  position: relative;
   display: flex;
   align-items: center;
   font-weight: 500;
   .phone{
     display: flex;
     align-items: center;
-    font-size: 8px;
+    font-size: 14px;
     img{
       margin-right: 5px;
       max-width: 18px;
     }
   }
 }
-.language ul{
-  display: flex;
-  list-style-type: none;
-  li{
-    margin: 0 5px;
-    font-size: 8px;
-    cursor: pointer;
-  }
-  li.activeLang{
-    position: relative;
-    &:after{
-      content:"";
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background: #000;
+.language {
+  display: none;
+  ul{
+    display: flex;
+    list-style-type: none;
+    li{
+      margin: 0 5px;
+      font-size: 8px;
+      cursor: pointer;
+    }
+    li.activeLang{
+      position: relative;
+      &:after{
+        content:"";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: var(--main-color);
+      }
     }
   }
+}
+.mobileLangActive{
+  display: block;
+  position: absolute;
+  background: rgba(255,255,255,0.9);
+  right: 0;
+  top: 44px;
+  padding: 15px;
+  ul{
+    flex-direction: column;
+    gap: 15px;
+    li{
+      font-size: 14px;
+      padding: 3px 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 456px){
+  .phoneLangBlock{
+    .phone{
+      font-size: 16px;
+    }
+  }
+
 }
 
 @media screen and (min-width: 756px){
@@ -53,6 +90,9 @@ header{
     .logo{
       max-width: unset;
     }
+    .mobileLangButton{
+      display: none;
+    }
   }
     .phoneLangBlock .phone{
       font-size: 16px;
@@ -60,11 +100,14 @@ header{
         margin-right: 5px;
       }
     }
-  .language ul{
+  .language {
+    display: block;
+    ul{
 
-    li{
-      margin: 0 15px;
-      font-size: 16px;
+      li{
+        margin: 0 15px;
+        font-size: 16px;
+      }
     }
   }
 }

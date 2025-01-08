@@ -1,4 +1,9 @@
 {
+  "advantage": {
+    "delivery": "Free Delivery",
+    "installation": "Free Installation",
+    "return": "Possibility of return"
+  },
   "menu": {
     "armrest": "Armrest",
     "trunkBags": "Trunk Bags",

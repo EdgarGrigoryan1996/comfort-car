@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../../../img/logo.png";
 import phoneIcon from "../../../img/phone.png";
 import { Language } from "../../../types/Language";
+import { MdLanguage } from "react-icons/md";
 
 const langOptions: Language[] = [
   { value: "am", label: "ARM" },
@@ -14,6 +15,7 @@ const langOptions: Language[] = [
 export const Header: FC = () => {
   const { i18n } = useTranslation();
   const [selectedLang, setSelectedLang] = useState<Language>(langOptions[0]);
+  const [langPopup, setLangPopup] = useState(false);
   const changeLang = (lang: Language) => {
     i18n.changeLanguage(lang.value);
     localStorage.setItem("lang", JSON.stringify(lang));
@@ -40,7 +42,14 @@ export const Header: FC = () => {
           <img src={phoneIcon} alt="Phone Number" />
           <span>+374 00 00 00 00</span>
         </div>
-        <div className={s.language}>
+        <div className={s.mobileLangButton}>
+          <MdLanguage onClick={() => setLangPopup(!langPopup)} />
+        </div>
+        <div
+          className={
+            langPopup ? s.language + " " + s.mobileLangActive : s.language
+          }
+        >
           <ul>
             {langOptions.map((lang) => {
               return (
