@@ -20,6 +20,24 @@ export const Header: FC = () => {
     i18n.changeLanguage(lang.value);
     localStorage.setItem("lang", JSON.stringify(lang));
   };
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    if (windowSize.width > 755) {
+      setLangPopup(false);
+    }
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [windowSize]);
   useEffect(() => {
     if (localStorage.getItem("lang")) {
       const storageLang = localStorage.getItem("lang");
@@ -61,6 +79,7 @@ export const Header: FC = () => {
                   onClick={() => {
                     changeLang(lang);
                     setSelectedLang(lang);
+                    setLangPopup(false);
                   }}
                 >
                   {lang.label}

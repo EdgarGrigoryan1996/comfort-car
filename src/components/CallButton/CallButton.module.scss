@@ -18,3 +18,38 @@
     }
   }
 }
+.smallCallButtonBlock{
+  width: 60%;
+  button{
+    font-weight: 500;
+    a{
+      font-size: 8px;
+      padding: 8px;
+    }
+  }
+}
+@media screen and (min-width: 456px){
+  .smallCallButtonBlock{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 600px){
+  .smallCallButtonBlock{
+    width: 40%;;
+    button{
+      a{
+        font-size: unset;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px){
+  .smallCallButtonBlock{
+    width: 50%;
+    button{
+      a{
+        padding: 12px;
+      }
+    }
+  }
+}

@@ -13,5 +13,9 @@
   },
   "product": {
     "call": "Call Now"
-  }
+  },
+  "advertising":{
+    "text": "Orders are accepted for",
+    "colorText": "any cars"
+}
 }

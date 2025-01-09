@@ -3,7 +3,7 @@ import s from "./ProductCard.module.css";
 import { FC } from "react";
 import { ProductCardPropsType } from "./types/ProductCardPropsType";
 import { useTranslation } from "react-i18next";
-import CallButton from "../CallButton/CallButton";
+import { CallButton } from "../CallButton/CallButton";
 
 export const ProductCard: FC<ProductCardPropsType> = (
   props: ProductCardType,

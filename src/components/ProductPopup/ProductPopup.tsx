@@ -1,6 +1,6 @@
 import s from "./ProductPopup.module.scss";
 import closeIcon from "../../img/close.png";
-import CallButton from "../CallButton/CallButton";
+import { CallButton } from "../CallButton/CallButton";
 import React from "react";
 import { ProductPopupType } from "./ProductPopupType";
 

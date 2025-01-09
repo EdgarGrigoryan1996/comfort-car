@@ -1,12 +1,19 @@
-import React from "react";
+import React, { FC } from "react";
 import { useTranslation } from "react-i18next";
 import s from "./CallButton.module.scss";
+import { CallButtonPropsType } from "./CallButtonPropsType";
 
-function CallButton() {
+export const CallButton: FC<CallButtonPropsType> = (
+  props: CallButtonPropsType,
+) => {
   const { t } = useTranslation();
   return (
     <div
-      className={s.callButtonBlock}
+      className={
+        props.type === "small"
+          ? s.smallCallButtonBlock + " " + s.callButtonBlock
+          : s.callButtonBlock
+      }
       onClick={(e) => {
         e.stopPropagation();
       }}
@@ -16,6 +23,4 @@ function CallButton() {
       </button>
     </div>
   );
-}
-
-export default CallButton;
+};

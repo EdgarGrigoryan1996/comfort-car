@@ -13,7 +13,7 @@ export const Advantage: FC = () => {
         <div>
           <img src={deliveryIcon} alt="Free Delivery in Yerevan" />
         </div>
-        <div className={s.advantageText}>
+        <div className={s.advantageText + " " + s.smallAdvantageText}>
           <b>{t("advantage.delivery")}</b>
         </div>
       </div>
