@@ -3,8 +3,10 @@ import closeIcon from "../../img/close.png";
 import { CallButton } from "../CallButton/CallButton";
 import React from "react";
 import { ProductPopupType } from "./ProductPopupType";
+import { useTranslation } from "react-i18next";
 
 export const ProductPopup = (props: ProductPopupType) => {
+  const { t } = useTranslation();
   return (
     <>
       {props.popup.status && props.popup.product && (
@@ -32,10 +34,13 @@ export const ProductPopup = (props: ProductPopupType) => {
                   <p>Lorem Ipsum</p>
                 </div>
                 <div className={s.infoPrice}>
-                  <h3>${props.popup.product.price}</h3>
+                  <h3>
+                    {props.popup.product.price + " " + t("product.currency")}
+                  </h3>
                 </div>
               </div>
               <div className={s.productDescription}>
+                <div>{props.popup.product.info}</div>
                 <ul>
                   <li>The frame is plywood</li>
                   <li>Sponge covered</li>

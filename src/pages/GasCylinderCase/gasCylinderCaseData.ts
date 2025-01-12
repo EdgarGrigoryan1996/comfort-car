@@ -1,11 +1,11 @@
-import gasCilinderCaseImg from "./img/gasCylinderCase.png";
+import gasCylinderCaseImg from "./img/gasCylinderCase.png";
 
 export const gasCylinderCaseData = [
   {
-    name: "Lorem Ipsum",
+    name: "content.gasCylinderCase.product1.name",
     price: 50,
-    pic: gasCilinderCaseImg,
-    brand: "Test",
-    info: "",
+    pic: gasCylinderCaseImg,
+    brand: "content.gasCylinderCase.product1.brand",
+    info: "content.gasCylinderCase.product1.info",
   },
 ];

@@ -78,6 +78,7 @@
       top: -15px;
       right: -15px;
       cursor: pointer;
+      width: 35px;
     }
     img {
       max-width: 100%;
@@ -107,6 +108,7 @@
 }
 
 @media screen  and (min-width: 756px){
+
   .popupWrapper{
     .popupBlock{
       width: 80%;
@@ -118,7 +120,11 @@
           margin-top: 70px;
         }
       }
+      .closeIcon{
+        width: 50px;
+      }
     }
+
   }
 }
 

@@ -11,11 +11,52 @@
     "tireCase": "Անվադողի պատյան",
     "firstAirBag": "Դեղատուփ"
   },
+  "filter": {
+    "seeAll": "Տեսնել բոլորը"
+  },
   "product": {
-    "call": "Զանգահարել"
+    "call": "Զանգահարել",
+    "currency": "Դրամ"
   },
   "advertising":{
     "text": "Պատվերներ ընդունվում են",
     "colorText": "ցանկացած մեքենաների համար"
+  },
+  "content": {
+    "armrest": {
+      "opelAstraG": {
+        "name": "Opel Astra G AM",
+        "brand": "Astra G",
+        "info": "Տեղեկությունը կլինի այստեղ"
+      }
+    },
+    "trunkBags": {
+      "product1": {
+        "name": "Trunk Bags AM",
+        "brand": "Trunk Bags AM",
+        "info": "Տեղեկությունը կլինի այստեղ"
+      }
+    },
+    "gasCylinderCase": {
+      "product1": {
+        "name": "Gas Cylinder Product1 AM",
+        "brand": "Gas Cylinder Product1 AM",
+        "info": "Տեղեկությունը կլինի այստեղ"
+      }
+    },
+    "tireCase": {
+      "product1": {
+        "name": "Tire Case Product1 AM",
+        "brand": "Tire Case Product1 AM",
+        "info": "Տեղեկությունը կլինի այստեղ"
+      }
+    },
+    "firstAirBag": {
+      "product1": {
+        "name": "First Air Bag AM",
+        "brand": "First Air Bag AM",
+        "info": "Տեղեկությունը կլինի այստեղ"
+      }
+    }
   }
 }

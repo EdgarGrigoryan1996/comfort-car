@@ -3,5 +3,6 @@ export interface ProductCardType {
   pic: string;
   price: number;
   brand: string;
+  info: any;
   setPopup?: any;
 }

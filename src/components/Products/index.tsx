@@ -4,8 +4,10 @@ import { ProductCard } from "../ProductCard/";
 import { PopupProductType } from "../../types/PopupProductType";
 import { ProductsPropsType } from "./ProductsPropsType";
 import { ProductPopup } from "../ProductPopup/ProductPopup";
+import { useTranslation } from "react-i18next";
 
 export const Products: FC<ProductsPropsType> = (props: ProductsPropsType) => {
+  const { t } = useTranslation();
   const [popup, setPopup] = useState<PopupProductType>({
     status: false,
     product: null,
@@ -25,10 +27,12 @@ export const Products: FC<ProductsPropsType> = (props: ProductsPropsType) => {
           ? props.products.map((product: any) => {
               return (
                 <ProductCard
-                  name={product.name}
+                  key={Math.random() + product.name}
+                  name={t(product.name)}
                   pic={product.pic}
                   price={product.price}
-                  brand={product.brand}
+                  brand={t(product.brand)}
+                  info={t(product.info)}
                   setPopup={setPopup}
                 />
               );
@@ -37,10 +41,12 @@ export const Products: FC<ProductsPropsType> = (props: ProductsPropsType) => {
               return type.map((product: any) => {
                 return (
                   <ProductCard
-                    name={product.name}
+                    key={Math.random() + product.name}
+                    name={t(product.name)}
                     pic={product.pic}
                     price={product.price}
-                    brand={product.brand}
+                    brand={t(product.brand)}
+                    info={t(product.info)}
                     setPopup={setPopup}
                   />
                 );

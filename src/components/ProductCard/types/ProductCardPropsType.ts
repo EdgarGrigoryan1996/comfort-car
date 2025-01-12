@@ -6,5 +6,6 @@ export interface ProductCardPropsType {
   pic: string;
   price: number;
   brand: string;
+  info: any;
   setPopup: Dispatch<PopupProductType>;
 }

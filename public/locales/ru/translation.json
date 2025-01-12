@@ -11,11 +11,52 @@
     "tireCase": "Чехлы для докатки",
     "firstAirBag": "Аптечка"
   },
+  "filter": {
+    "seeAll": "Смотреть все"
+  },
   "product": {
-    "call": "Позвонить"
+    "call": "Позвонить",
+    "currency": "Драм"
   },
   "advertising":{
     "text": "Заказы принимаются на",
     "colorText": "любые автомобили"
+  },
+  "content": {
+    "armrest": {
+      "opelAstraG": {
+        "name": "Opel Astra G RU",
+        "brand": "Astra G",
+        "info": "Информация будет здесь"
+      }
+    },
+    "trunkBags": {
+      "product1": {
+        "name": "Trunk Bags RU",
+        "brand": "Trunk Bags RU",
+        "info": "Информация будет здесь"
+      }
+    },
+    "gasCylinderCase": {
+      "product1": {
+        "name": "Gas Cylinder Product1 RU",
+        "brand": "Gas Cylinder Product1 RU",
+        "info": "Информация будет здесь"
+      }
+    },
+    "tireCase": {
+      "product1": {
+        "name": "Tire Case Product1 RU",
+        "brand": "Tire Case Product1 RU",
+        "info": "Информация будет здесь"
+      }
+    },
+    "firstAirBag": {
+      "product1": {
+        "name": "First Air Bag RU",
+        "brand": "First Air Bag Ru",
+        "info": "Информация будет здесь"
+      }
+    }
   }
 }

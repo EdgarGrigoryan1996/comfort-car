@@ -1,7 +1,7 @@
 const filterData = [
   {
     id: 1,
-    name: "See All",
+    name: "filter.seeAll",
     checked: true,
   },
   {

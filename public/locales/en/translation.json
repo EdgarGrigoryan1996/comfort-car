@@ -11,11 +11,52 @@
     "tireCase": "Tire Case",
     "firstAirBag": "First Aid Bag"
   },
+  "filter": {
+    "seeAll": "See All"
+  },
   "product": {
-    "call": "Call Now"
+    "call": "Call Now",
+    "currency": "AMD"
   },
   "advertising":{
     "text": "Orders are accepted for",
     "colorText": "any cars"
-}
+},
+  "content": {
+    "armrest": {
+      "opelAstraG": {
+        "name": "Opel Astra G EN",
+        "brand": "Astra G",
+        "info": "The information will be here"
+      }
+    },
+    "trunkBags": {
+      "product1": {
+        "name": "Trunk Bags EN",
+        "brand": "Trunk Bags EN",
+        "info": "The information will be here"
+      }
+    },
+    "gasCylinderCase": {
+      "product1": {
+        "name": "Gas Cylinder Product1 EN",
+        "brand": "Gas Cylinder Product1 EN",
+        "info": "The information will be here"
+      }
+    },
+    "tireCase": {
+      "product1": {
+        "name": "Tire Case Product1 EN",
+        "brand": "Tire Case Product1 EN",
+        "info": "The information will be here"
+      }
+    },
+    "firstAirBag": {
+      "product1": {
+        "name": "First Air Bag EN",
+        "brand": "First Air Bag EN",
+        "info": "The information will be here"
+      }
+    }
+  }
 }

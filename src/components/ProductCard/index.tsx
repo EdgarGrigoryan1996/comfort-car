@@ -19,6 +19,7 @@ export const ProductCard: FC<ProductCardPropsType> = (
             name: props.name,
             pic: props.pic,
             price: props.price,
+            info: props.info,
           },
         });
       }}
@@ -29,7 +30,7 @@ export const ProductCard: FC<ProductCardPropsType> = (
       <div className={s.productInfo}>
         <span className={s.productName}>{props.name}</span>
         <span className={s.productPrice}>
-          <b>${props.price}</b>
+          <b>{props.price + " " + t("product.currency")}</b>
         </span>
       </div>
       <div className={s.productBtn}>

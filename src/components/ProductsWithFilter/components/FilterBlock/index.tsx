@@ -5,10 +5,12 @@ import { FilterDataType } from "../../../../types/FilterDataType";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { FilterBlockPropsType } from "./FilterBlockPropsType";
 import { BiCheckCircle } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 
 export const FilterBlock: FC<FilterBlockPropsType> = (
   props: FilterBlockPropsType,
 ) => {
+  const { t } = useTranslation();
   const checkFilterData = (
     currentData: FilterDataType[],
     setCurrentData: Dispatch<FilterDataType[]>,
@@ -115,7 +117,7 @@ export const FilterBlock: FC<FilterBlockPropsType> = (
                     }
                   }}
                 >
-                  {data.name}
+                  {data.id === 1 ? t(data.name) : data.name}
                 </span>
                 {data.checked && (
                   <label>

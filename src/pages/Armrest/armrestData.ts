@@ -2,11 +2,11 @@ import productImg from "../../img/product.png";
 export const armrestData = {
   opel: [
     {
-      name: "Opel Astra G",
+      name: "content.armrest.opelAstraG.name",
       price: 60,
       pic: productImg,
-      brand: "Astra G",
-      info: "",
+      brand: "content.armrest.opelAstraG.brand",
+      info: "content.armrest.opelAstraG.info",
     },
     {
       name: "Opel Zafira",
